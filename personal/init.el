@@ -4,7 +4,10 @@
 (require 'auto-complete-config)
 (require 'auto-complete-clang)
 
-;; (load-theme 'solarized-dark)
+(disable-theme 'zenburn)
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
+(setq solarized-mode 'dark)
+(load-theme 'solarized 't)
 
 (xterm-mouse-mode t)
 (defun track-mouse (e))
