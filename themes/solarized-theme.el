@@ -53,7 +53,7 @@
       (default ((,t (:foreground ,content-em :background ,silent))))
       (cursor  ((,t (:foreground ,content-em :background ,content :inverse-video t))))
       (linum   ((,t (:foreground ,content    :background ,silent-em))))
-      (hl-line ((,t (:foreground ,silent-em :background ,silent ,@fmt-revbb :box nil))))
+      (hl-line ((,t (:foreground ,silent-em :background ,silent))))
 
       ;; correctness
       (warning ((,t (:foreground ,yellow))))
@@ -63,6 +63,11 @@
       ;; mode line
       (mode-line ((,t (:foreground ,silent-em :background ,silent ,@fmt-revbb :box nil))))
       (mode-line-inactive ((,t (:foreground ,silent-em :background ,silent ,@fmt-revbb :box nil))))
+
+      (elscreen-tab-current-screen-face ((,t (:foreground ,content-em :background ,silent :underline nil))))
+      (elscreen-tab-background-face ((,t (:background ,silent :underline nil))))
+      (elscreen-tab-other-screen-face ((,t (:foreground ,silent-em :background ,silent-em :underline nil))))
+      (elscreen-tab-control-face ((,t (:foreground ,silent-em :background ,silent :underline nil))))
 
       ;; font lock
       (font-lock-builtin-face ((,t (:foreground ,blue :slant italic))))

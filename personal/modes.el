@@ -31,8 +31,13 @@
 ;; Scala Mode
 ;;
 (require 'ensime)
+
 (setq ensime-ac-enable-argument-placeholders nil)
 (setq ensime-ac-override-settings nil)
+
+(defun scala-mode-on-init ()
+  (setq ac-sources '(ac-source-ensime-completions)))
+
 (add-hook 'scala-mode-hook 'ensime-scala-mode-hook)
 (add-hook 'scala-mode-hook 'scala-mode-on-init)
 
@@ -80,16 +85,10 @@
 (autoload 'haml-mode "haml-mode" "HAML Mode" t)
 (add-to-list 'auto-mode-alist '("\\.haml$" . haml-mode))
 
-(defun haml-mode-init ()
-  (init-mode))
-
-(add-hook 'haml-mode-hook 'haml-mode-on-init)
-
 ;; ********************************************************************************
 ;; YAML Mode
 ;;
 (autoload 'yaml-mode "yaml-mode" "YAML Mode." t)
-
 (add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
 
 
