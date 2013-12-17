@@ -53,7 +53,7 @@
       (default ((,t (:foreground ,content-em :background ,silent))))
       (cursor  ((,t (:foreground ,content-em :background ,content :inverse-video t))))
       (linum   ((,t (:foreground ,content    :background ,silent-em))))
-      (hl-line ((,t (:foreground ,silent-em :background ,silent))))
+      (hl-line ((,t (:background ,silent-em))))
 
       ;; correctness
       (warning ((,t (:foreground ,yellow))))
