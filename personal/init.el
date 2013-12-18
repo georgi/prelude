@@ -4,13 +4,14 @@
 (setq prelude-whitespace nil)
 (setq prelude-guru nil)
 
-(menu-bar-mode 0)
-(scroll-bar-mode 0)
-(tool-bar-mode 0)
+(menu-bar-mode -1)
+(scroll-bar-mode -1)
+(tool-bar-mode -1)
 (guru-mode 0)
 
 ;; (global-set-key (kbd "<mouse-5>") 'scroll-up-line)
 ;; (global-set-key (kbd "<mouse-4>") 'scroll-down-line)
+(setq-default mode-line-format nil)
 
 (global-set-key (kbd "DEL") 'backward-delete-char-untabify)
 (global-set-key (kbd "RET") 'newline-and-indent)

@@ -30,16 +30,9 @@
        (t (setq unread-command-events (append unread-command-events
                           (list evt))))))))
 
-
 ;; change mode-line color by evil state
-(lexical-let ((default-color (cons (face-background 'mode-line)
-                                   (face-foreground 'mode-line))))
-  (add-hook 'post-command-hook
-            (lambda ()
-              (let ((color (cond ((minibufferp) default-color)
-                                 ((evil-insert-state-p) '("#e80000" . "#000000"))
-                                 ((evil-emacs-state-p)  '("#444488" . "#000000"))
-                                 ((buffer-modified-p)   '("#006fa0" . "#000000"))
-                                 (t default-color))))
-                (set-face-background 'mode-line (car color))
-                (set-face-foreground 'mode-line (cdr color))))))
+(add-hook 'post-command-hook
+          (lambda ()
+            (if (evil-insert-state-p)
+                (setq-default mode-line-format "-- INSERT --")
+              (setq-default mode-line-format nil))))
