@@ -6,8 +6,6 @@
     evil-matchit
     surround))
 
-;; (require 'evil-elscreen)
-
 (evil-mode 1)
 
 (put 'dired-find-alternate-file 'disabled nil)
@@ -30,9 +28,3 @@
        (t (setq unread-command-events (append unread-command-events
                           (list evt))))))))
 
-;; change mode-line color by evil state
-(add-hook 'post-command-hook
-          (lambda ()
-            (if (evil-insert-state-p)
-                (setq-default mode-line-format "-- INSERT --")
-              (setq-default mode-line-format nil))))
