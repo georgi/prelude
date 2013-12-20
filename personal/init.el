@@ -3,6 +3,7 @@
 
 (setq prelude-whitespace nil)
 (setq prelude-guru nil)
+(setq prelude-flyspell nil)
 
 (menu-bar-mode -1)
 (scroll-bar-mode -1)

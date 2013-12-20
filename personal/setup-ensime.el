@@ -11,3 +11,6 @@
 
 (add-hook 'scala-mode-hook 'ensime-scala-mode-hook)
 (add-hook 'scala-mode-hook 'scala-mode-on-init)
+
+
+(global-set-key (kbd "<M-S-return>") 'ensime-import-type-at-point)
