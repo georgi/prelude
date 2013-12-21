@@ -56,6 +56,7 @@
 (global-set-key (kbd "C-c C-s") 'helm-swoop)
 
 (global-set-key (kbd "M-SPC") 'helm-mini)
+(global-set-key (kbd "M-RET") 'helm-mini)
 
 (define-key prelude-mode-map [?\s-d] 'helm-projectile-dirs)
 (define-key prelude-mode-map [?\s-p] 'projectile-switch-project)
@@ -65,6 +66,3 @@
 (define-key prelude-mode-map (kbd "s-r") 'helm-projectile-recentf)
 (define-key prelude-mode-map (kbd "s-b") 'helm-projectile-buffers)
 
-;; (define-key prelude-mode-map (kbd "s-j") 'prelude-top-join-line)
-;; (define-key prelude-mode-map (kbd "s-k") 'prelude-kill-whole-line)
-;; (define-key prelude-mode-map (kbd "s-o") 'prelude-smart-open-line-above)

@@ -11,10 +11,13 @@
 (global-set-key (kbd "s-5") (lambda () (interactive) (elscreen-goto 4)))
 (global-set-key (kbd "s-6") (lambda () (interactive) (elscreen-goto 5)))
 (global-set-key (kbd "s-7") (lambda () (interactive) (elscreen-goto 6)))
-(global-set-key (kbd "s-t") 'elscreen-create)
+(global-set-key (kbd "s-t") 'elscreen-clone)
 (global-set-key (kbd "s-w") 'elscreen-kill)
 (global-set-key (kbd "s-e") 'elscreen-find-file)
 (global-set-key (kbd "<s-right>") 'elscreen-next)
 (global-set-key (kbd "<s-left>") 'elscreen-previous)
 
-
+(define-key prelude-mode-map (kbd "s-j") 'elscreen-previous)
+(define-key prelude-mode-map (kbd "s-k") 'elscreen-next)
+(define-key prelude-mode-map (kbd "s-l") 'elscreen-link)
+(define-key prelude-mode-map (kbd "s-o") 'elscreen-split)
