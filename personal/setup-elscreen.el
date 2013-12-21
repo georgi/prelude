@@ -13,7 +13,7 @@
 (global-set-key (kbd "s-7") (lambda () (interactive) (elscreen-goto 6)))
 (global-set-key (kbd "s-t") 'elscreen-create)
 (global-set-key (kbd "s-w") 'elscreen-kill)
-(global-set-key (kbd "s-f") 'elscreen-find-file)
+(global-set-key (kbd "s-e") 'elscreen-find-file)
 (global-set-key (kbd "<s-right>") 'elscreen-next)
 (global-set-key (kbd "<s-left>") 'elscreen-previous)
 

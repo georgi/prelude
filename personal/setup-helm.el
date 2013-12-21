@@ -55,7 +55,7 @@
 (global-set-key (kbd "C-c C-o") 'helm-occur)
 (global-set-key (kbd "C-c C-s") 'helm-swoop)
 
-(global-set-key (kbd "M-RET") 'helm-mini)
+(global-set-key (kbd "M-SPC") 'helm-mini)
 
 (define-key prelude-mode-map [?\s-d] 'helm-projectile-dirs)
 (define-key prelude-mode-map [?\s-p] 'projectile-switch-project)
