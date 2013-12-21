@@ -14,7 +14,4 @@
 (global-set-key (kbd "RET") 'newline-and-indent)
 (global-set-key (kbd "<s-return>") 'toggle-frame-fullscreen)
 
-(global-set-key (kbd "C-c C-n") 'next-error)
-(global-set-key (kbd "C-c C-r") 'recompile)
-
-
+(global-set-key (kbd "C-c C-c") 'recompile)

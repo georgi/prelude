@@ -26,7 +26,7 @@
 
 (custom-theme-set-faces
  'solarized-dark
- '(helm-selection ((t (:background "#032b35" :foreground "#93A1A0")))))
+ '(helm-selection ((t (:background "#032b35" :foreground "#eee8d5")))))
 
 (custom-theme-set-faces
  'solarized-dark
@@ -39,3 +39,7 @@
 (custom-theme-set-faces
  'solarized-dark
  '(helm-ff-directory ((t (:foreground "#93A1A0" :underline nil)))))
+
+(custom-theme-set-faces
+ 'solarized-dark
+ '(flycheck-warning ((t (:underline (:color "#073642" :style wave))))))

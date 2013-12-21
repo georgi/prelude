@@ -3,7 +3,6 @@
 ;;
 (prelude-require-package 'ghc)
 
-
 (defun haskell-mode-on-init ()
   (ghc-init)
   (require 'inf-haskell)
@@ -19,5 +18,7 @@
 (autoload 'haskell-mode "haskell-mode" "Haskell Mode." t)
 
 (add-to-list 'auto-mode-alist '("\\.hs$" . haskell-mode))
+
+(add-to-list 'exec-path "~/Library/Haskell/bin")
 
 (setq haskell-program-name "ghci")

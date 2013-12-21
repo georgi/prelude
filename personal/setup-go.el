@@ -1,5 +1,4 @@
-(prelude-require-packages
- '(go-mode go-autocomplete))
+(prelude-require-packages '(go-mode go-autocomplete))
 
 (require 'go-mode-load)
 
