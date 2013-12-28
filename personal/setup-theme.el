@@ -42,4 +42,11 @@
 
 (custom-theme-set-faces
  'solarized-dark
- '(flycheck-warning ((t (:underline (:color "#073642" :style wave))))))
+ '(flycheck-warning ((t (:underline (:color "#93A1A0" :style wave))))))
+
+(custom-theme-set-faces
+ 'solarized-dark
+ '(hl-line ((t (:background "black")))))
+
+(set-face-background 'shm-current-face "#001111")
+(set-face-background 'shm-quarantine-face "#110000")

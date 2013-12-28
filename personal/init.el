@@ -12,6 +12,11 @@
 
 (global-set-key (kbd "DEL") 'backward-delete-char-untabify)
 (global-set-key (kbd "RET") 'newline-and-indent)
-(global-set-key (kbd "<s-return>") 'toggle-frame-fullscreen)
 
-(global-set-key (kbd "C-c C-c") 'recompile)
+(global-set-key (kbd "<s-return>") 'recompile)
+
+(require 'ibuffer)
+(define-key ibuffer-mode-map (kbd "j") 'evil-next-line)
+(define-key ibuffer-mode-map (kbd "k") 'evil-previous-line)
+
+(server-start)

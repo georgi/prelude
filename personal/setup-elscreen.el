@@ -20,4 +20,5 @@
 (define-key prelude-mode-map (kbd "s-j") 'elscreen-previous)
 (define-key prelude-mode-map (kbd "s-k") 'elscreen-next)
 (define-key prelude-mode-map (kbd "s-l") 'elscreen-link)
-(define-key prelude-mode-map (kbd "s-o") 'elscreen-split)
+(define-key prelude-mode-map (kbd "s-;") 'elscreen-split)
+(define-key prelude-mode-map (kbd "s-y") 'elscreen-swap)

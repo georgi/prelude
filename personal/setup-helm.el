@@ -50,10 +50,7 @@
           :buffer "*projectile recent files*"
           :prompt (projectile-prepend-project-name "file: "))))
 
-(global-set-key (kbd "C-c C-g") 'helm-ls-git-ls)
 (global-set-key (kbd "C-c C-k") 'helm-show-kill-ring)
-(global-set-key (kbd "C-c C-o") 'helm-occur)
-(global-set-key (kbd "C-c C-s") 'helm-swoop)
 
 (global-set-key (kbd "M-SPC") 'helm-mini)
 (global-set-key (kbd "M-RET") 'helm-mini)
@@ -65,4 +62,10 @@
 
 (define-key prelude-mode-map (kbd "s-r") 'helm-projectile-recentf)
 (define-key prelude-mode-map (kbd "s-b") 'helm-projectile-buffers)
+(define-key prelude-mode-map (kbd "s-o") 'helm-occur)
+(define-key prelude-mode-map (kbd "s-8") 'helm-swoop)
+(define-key prelude-mode-map (kbd "s-i") 'helm-imenu)
+
+
+
 
