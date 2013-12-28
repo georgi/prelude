@@ -49,7 +49,7 @@
   (let ((helm-ff-transformer-show-only-basename nil))
     (helm :sources '(helm-source-projectile-recentf-list)
           :buffer "*projectile recent files*"
-          :prompt (projectile-prepend-project-name "file: "))))
+          :prompt (projectile-prepend-project-name "recentf: "))))
 
 (global-set-key (kbd "C-c C-k") 'helm-show-kill-ring)
 
