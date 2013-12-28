@@ -2,6 +2,7 @@
  '(helm
    helm-projectile
    helm-ls-git
+   helm-swoop
    helm-git-grep))
 
 (require 'helm-config)
