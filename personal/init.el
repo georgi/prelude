@@ -13,7 +13,7 @@
 (global-set-key (kbd "DEL") 'backward-delete-char-untabify)
 (global-set-key (kbd "RET") 'newline-and-indent)
 
-(global-set-key (kbd "<s-return>") 'recompile)
+(global-set-key (kbd "<s-return>") 'toggle-frame-fullscreen)
 
 (require 'ibuffer)
 (define-key ibuffer-mode-map (kbd "j") 'evil-next-line)
