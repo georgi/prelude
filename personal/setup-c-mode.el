@@ -27,3 +27,10 @@
   (setq ac-sources '(ac-source-clang)))
 
 (add-hook 'objc-mode-hook 'objc-mode-init)
+
+(defun csharp-mode-init()
+  (setq ac-sources '(ac-source-omnisharp)))
+
+(add-hook 'csharp-mode-hoop 'csharp-mode-init)
+
+(add-to-list 'exec-path "/Applications/Unity/MonoDevelop.app/Contents/Frameworks/Mono.framework/Commands")

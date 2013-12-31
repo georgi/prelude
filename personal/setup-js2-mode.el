@@ -11,6 +11,7 @@
 (autoload 'js2-mode "js2-mode" "JS2 Mode." t)
 
 (setq js2-rebind-eol-bol-keys nil)
+(setq js2-skip-preprocessor-directives t)
 
 (defun js2-mode-on-init ()
   (setq ac-sources '(ac-source-semantic
