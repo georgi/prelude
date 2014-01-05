@@ -1,4 +1,3 @@
-
 ;; ********************************************************************************
 ;; JS2 Mode
 ;;
@@ -14,8 +13,6 @@
 (setq js2-skip-preprocessor-directives t)
 
 (defun js2-mode-on-init ()
-  (setq ac-sources '(ac-source-semantic
-                     ac-source-words-in-buffer
-                     ac-source-words-in-same-mode-buffers)))
+  (company-mode))
 
 (add-hook 'js2-mode-hook 'js2-mode-on-init)

@@ -1,6 +1,5 @@
 (prelude-require-packages
   '(auto-complete
-    auto-complete-clang
     ac-nrepl))
 
 (require 'auto-complete-config)
@@ -10,6 +9,6 @@
 (ac-config-default)
 (ac-set-trigger-key "TAB")
 (setq ac-quick-help-delay 0.5)
-(setq ac-auto-start nil)
 
-(global-auto-complete-mode t)
+(setq ac-modes '(scala-mode haskell-mode))
+
