@@ -55,6 +55,3 @@
 (custom-theme-set-faces
  'solarized-dark
  '(flycheck-warning ((t (:underline (:color "#93A1A0" :style wave))))))
-
-(set-face-background 'shm-current-face "#001111")
-(set-face-background 'shm-quarantine-face "#110000")
