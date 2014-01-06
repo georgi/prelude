@@ -1,5 +1,3 @@
-(prelude-require-packages '(company company-inf-ruby))
-
 (setq visible-bell 1)
 (setq ring-bell-function (lambda() ()))
 
@@ -24,11 +22,5 @@
 (define-key ibuffer-mode-map (kbd "k") 'evil-previous-line)
 
 (add-to-list 'exec-path "~/bin")
-
-(define-key company-mode-map (kbd "TAB") 'company-complete-common)
-(define-key company-active-map (kbd "C-n") 'company-select-next)
-(define-key company-active-map (kbd "C-p") 'company-select-previous)
-(define-key ac-completing-map (kbd "C-n") 'ac-next)
-(define-key ac-completing-map (kbd "C-p") 'ac-previous)
 
 (server-start)
