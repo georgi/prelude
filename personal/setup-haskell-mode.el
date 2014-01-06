@@ -3,14 +3,6 @@
 ;;
 (prelude-require-package 'ghc)
 
-(setq shm-path  "~/.emacs.d/structured-haskell-mode/elisp")
-
-(if (file-exists-p shm-path)
-    (progn
-      (add-to-list 'load-path shm-path)
-      (require 'shm)
-      (add-hook 'haskell-mode-hook 'structured-haskell-mode))) 
-
 (defun haskell-mode-on-init ()
   (ghc-init)
   (require 'inf-haskell)
